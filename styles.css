@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #e60012;
+    --secondary-color: #fff;
+    --font-family-primary: 'Press Start 2P', cursive;
+    --font-family-secondary: 'Roboto', sans-serif;
+    --scroll-padding-top: 70px;
+}
+
+body {
+    font-family: var(--font-family-secondary);
+    scroll-padding-top: var(--scroll-padding-top);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    font-family: var(--font-family-primary);
+    color: var(--secondary-color) !important;
+}
+
+.navbar-brand {
+    padding: 5px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 50px;
+}
+
+.nav-link {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.nav-link.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color) !important;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.section-title {
+    font-family: var(--font-family-primary);
+    color: var(--primary-color);
+}
+
+.text-colored {
+    color: var(--primary-color);
+}
+
+.text-white {
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-enviar {
+    background-color: #fff; 
+    color: #e60012; 
+    border-color: #fff;
+}
+
+.btn-enviar:hover {
+    background-color: #e6e6e6;
+}
+
+.social-links a {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.social-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+#events .tab-pane img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.about-section, .contact-section, #contact {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#contact .form-label, #contact h3, #contact p, #contact .btn-primary {
+    color: var(--secondary-color);
+}
+
+#contact .btn-primary:hover {
+    background-color: #e6e6e6;
+}
+
+#scrollToTopBtn {
+    background-color: var(--primary-color);
+}
+
+aside[role="tablist"] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside[role="tablist"] .nav-link {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+aside[role="tablist"] .nav-link:hover, aside[role="tablist"] .nav-link:focus {
+    background-color: #b3000e;
+}
+
+aside[role="tablist"] .nav-link.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.tab-content .tab-pane {
+    padding: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    color: var(--secondary-color);
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
